@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Russo+One&display=swap');
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    scroll-behavior: smooth;
+    background-color: rgb(40, 40, 40);
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    transition: all 100ms;
+}
+.home-container{
+    margin: 0 auto;
+}
+.container{
+    margin: 0 auto;
+    border: 1% solid grey;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+}
+.top-header{
+    background-image: url(./header.svg);
+    background-size: 100% auto;
+    background-repeat: no-repeat; 
+    width: 100%;
+    height: 20%;
+    padding-bottom: 5%;
+    float: right;
+    position: fixed;
+    z-index: 10;
+}
+.buttons{
+    width: 25%;
+    display: flex;
+    margin-left: 72%;
+    margin-bottom: 0;
+}
+
+.buttons button{
+    width: 35%;
+    margin-top: 4%;
+    font-size: 1.2vw;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    text-align: center;
+    margin-left: 2%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 0.7vw 0.7vw 0 0;
+    color: white;
+    font-weight: bold;
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+.clear{
+    clear: right;
+}
+.buttons button:hover{
+    background-color: darkgray;
+    color: black;
+    transition: color 0.5s !important;
+    border-bottom: 0.2vw solid black;
+    cursor: pointer;
+}
+.heading h1{
+    text-align: center;
+    font-size: 10vw;
+    font-family: 'Russo One', sans-serif !important;
+    color: whitesmoke;
+    margin: 0 auto;
+    transition: all 500ms !important;
+    padding-top: 15%;
+}
+.green-terminal{
+    color: rgba(153, 205, 50, 1);
+}
+
+.heading h3{
+    color: whitesmoke;
+    font-size: 3vw;
+    text-align: center;
+    font-weight: lighter;
+}
+.hamburger{
+    display: none;
+}
+.why{
+    width: 100vw;
+    height: 100vh;
+    color: whitesmoke;
+    box-sizing: border-box;
+}
+.why h1{
+    font-size: 10vw;
+    margin-left: 5%;
+    padding-top: 5%;
+}
+.why h3{
+    font-size: 3.75vw;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.new{
+    width: 100vw;
+    height: 100vh;
+    color: whitesmoke;
+    box-sizing: border-box;
+}
+.new h1{
+    font-size: 8vw;
+    margin-left: 5%;
+    padding-top: 5%;
+}
+.new h3{
+    font-size: 3vw;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.practice{
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    color: whitesmoke;
+}
+.practice h1{
+    font-size: 8vw;
+    padding-top: 5%;
+    margin-left: 5%;
+}
+.practice h3{
+    font-size: 3vw;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 0;
+}
+.practice p{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 2vw;
+}
+.practice input{
+    height: 2vw;
+    padding: 0.5vw;
+    background-color: none;
+    box-sizing: border-box;
+    transform: translateY(-25%);
+}
+.practice button{
+    background-color: whitesmoke;
+    padding: 1.5%;
+    margin-left: 5%;
+    border-radius: 0.75vw;
+    box-sizing: border-box;
+    font-size: 1.5vw;
+}
+.startButton{
+    color: blue;
+    font-weight: bolder;
+    border:  blue solid 0.5vw;
+}
+.checkButton{
+    color: green;
+    font-weight: bolder;
+    border:  green solid 0.5vw;
+    margin-right: 5%;
+}
+.startButton:hover{
+    color: whitesmoke;
+    background-color: blue;
+    border:  whitesmoke solid 0.5vw;
+    transition: all 500ms;
+}
+.checkButton:hover{
+    color: whitesmoke;
+    background-color: green;
+    border:  whitesmoke solid 0.5vw;
+    transition: all 500ms;
+}
+
+
+
+/**
+ * Responsive Code
+ */
+ @media (max-width: 670px){
+     .buttons{
+         display: none;
+     }
+     .top-header{
+         height: 5vh;
+         background-size: cover;
+     }
+     .hamburger{
+         display: block;
+         float: right;
+         margin-right: 3vh;
+         margin-top: 0.5vh;
+         font-size: 5vh;
+         color: whitesmoke !important;
+         text-shadow: 2px 2px 5px black;
+     }
+    
+     .heading h1{
+         padding-top: 15vh;
+        font-size: 12vh !important;
+     }
+     .heading h3{
+         font-size: 6vh !important;
+     }
+     .why h1{
+         font-size: 8vh;
+     }
+     .why h3{
+         font-size: 4vh;
+     }
+     .new h1{
+        font-size: 8vh;
+    }
+    .new h3{
+        font-size: 3vh;
+    }
+    .practice{
+        padding-top: 5%;
+        margin-top: 0;
+    }
+    .practice h1{
+        font-size: 6vh;
+        margin-top: 0;
+    }
+    .practice p{
+        font-size: 3vh !important;
+    }
+    .practice input{
+        height: 3vw;
+        padding: 2vh 0 !important;
+        margin: 1vh auto !important;
+        font-size: 3vw;
+    }
+    .practice button{
+        padding: 5%;
+        margin-left: 10%;
+        border-radius: 1vw;
+        box-sizing: border-box;
+        font-size: 1.5vh;
+    }
+
+ }
+ @media (max-width: 1000px){
+    .heading h1{
+        font-size: 20vh;
+     }
+     .heading h3{
+         font-size: 8vh;
+     }
+     .buttons button{
+         font-size: 2vh;
+         width: 50%;
+         margin-top: 0.5vh;
+         padding-top: 0.5vh;
+         margin-right: 2.5vh; 
+         height: 5vh;        
+     }
+     .buttons{
+         margin-left: 50%;
+         width: 50%;
+     }
+     .why{
+        padding-top: 15%;
+     }
+     .new{
+        padding-top: 15%;
+     }
+     .practice{
+         padding-top: 15%;
+     }
+     .practice p{
+        font-size: 3vw;
+     }
+ }

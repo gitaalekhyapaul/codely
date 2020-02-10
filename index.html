@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css">
+    <title>Codely</title>
+</head>
+
+<body>
+    <div class="home-container" id="home">
+        <div class="container">
+            <div class="top-header">
+                <span class="hamburger" onclick="hamBurger()"><i class="fas fa-bars"></i></span>
+                <div class="buttons">
+                    <button class="whyButton" onclick="whyButton()">Why Us?</button>
+                    <button class="whatsNew" onclick="whatsNew()">What's new?</button>
+                    <button class="practiceTime" onclick="practiceTime()">Practice</button>
+                </div>
+                <div class="clear"></div>
+            </div>  
+            <div class="heading">
+                <h1><span class="header"></span> <span class="green-terminal">><span class="terminal">_</span></span></h1>
+                <h3>A place to learn the logic behind coding</h3>
+            </div>
+        </div>
+        <div class="why" id="why-us">
+            <h1>Why choose us?</h1>
+            <h3>We have over 30 years of experience in training both students and proffessionals in their careers.
+                Expect us to deliver our best service to you too. We have successfully place over 5000 students in
+                our lifetime till now.
+            </h3>
+        </div>
+        <div class="new" id="whats-new">
+            <h1>What's new in our product?</h1>
+            <h3>The way we teach matters a lot. We do not focus on the syntax behind coding, you can learn
+                that from the documentation. What we focus on is the implementation of logic. We try to make
+                your logic powerful. Syntax will anyways be learnt over time.
+            </h3>
+        </div>
+        <div class="practice" id="practiceTime">
+            <h1>Practice Problem:</h1>
+            <button class="startButton"> START</button><button class="checkButton">CHECK</button><span class="result"></span>
+            <p>
+                Fill in the blanks with the following keywords only:<br>
+                <b> for, else, check-if, throw, then</b><br>
+                <br>
+                Program for checking fresh and rotten apples:<br><br>
+                <input type="text"> each apple, <input type="text"> they are fresh, <input type="text"> eat, 
+                <input type="text"> you should <input type="text"> them.
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
