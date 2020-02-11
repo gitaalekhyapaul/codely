@@ -182,7 +182,9 @@ body{
     border:  whitesmoke solid 0.5vw;
     transition: all 500ms;
 }
-
+.dropdown{
+    display: none;
+}
 
 
 /**
@@ -204,6 +206,9 @@ body{
          font-size: 5vh;
          color: whitesmoke !important;
          text-shadow: 2px 2px 5px black;
+     }
+     .hamburger:active{
+        text-shadow: 5px 5px 7.5px rgb(255, 255, 0);
      }
     
      .heading h1{
@@ -248,6 +253,24 @@ body{
         border-radius: 1vw;
         box-sizing: border-box;
         font-size: 1.5vh;
+    }
+    .dropdown{
+        background-color: rgba(161, 161, 161, 0.8);
+        display: block;
+        margin-top: 10vh;
+        font-size: 3vh;
+        text-align: right;
+        padding-right: 5%;
+        transition: all 500ms;
+    }
+    a:link{
+        text-decoration: none;
+    }
+    .dropdown li{
+        list-style: none;
+        color: black;
+        text-shadow: 2px 2px 5px whitesmoke;
+        font-weight: bolder;
     }
 
  }

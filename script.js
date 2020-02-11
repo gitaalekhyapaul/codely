@@ -1,6 +1,8 @@
 
+    const dropdown = document.querySelector(".dropdown")
 window.onload = () => {
     document.getElementById('home').scrollIntoView()
+    dropdown.style.display = 'none'
     let str = "Codely."
     let i = 0
     const terminalDash = document.querySelector(".terminal")   
@@ -28,7 +30,7 @@ const practiceTime = () => {
     document.getElementById('practiceTime').scrollIntoView()
 }
 const hamBurger = () => {
-    document.getElementById('practiceTime').scrollIntoView()
+    dropdown.style.display = (dropdown.style.display == 'none' ? '' : 'none')
 }
 
 const inputArray = document.querySelectorAll("input")
